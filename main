@@ -5,6 +5,6 @@ docker run \
     -u $UID:`id -g` \
     -e DISPLAY=$DISPLAY \
     -v $HOME/.Xauthority:/root/.Xauthority \
-    -v /:/workdir \
+    -v /:/hostroot \
     -it --rm tak0kada/docker_command_template \
     main $@

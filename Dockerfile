@@ -1,6 +1,6 @@
 FROM archlinux/base
 USER root
-WORKDIR /workdir
+WORKDIR /hostroot
 
 RUN pacman -Syyu --noconfirm && \
     pacman-db-upgrade && \

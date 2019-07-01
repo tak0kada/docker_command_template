@@ -33,8 +33,8 @@ int main(const int argc, const char* const argv[])
         return 1;
     }
 
-    auto input_path  = "/workdir" + vm["input"].as<std::string>();
-    auto output_path = "/workdir" + vm["output"].as<std::string>();
+    auto input_path  = "/hostroot" + vm["input"].as<std::string>();
+    auto output_path = "/hostroot" + vm["output"].as<std::string>();
     // auto param = vm["param"].as<double>();
 
 
