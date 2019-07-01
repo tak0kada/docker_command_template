@@ -4,3 +4,7 @@
   * Any directories or files should be specified with an absolute path.
   * Note that malicious program can get root access.
 
+## Usage
+```sh
+./main --input /path/to/input --output /path/to/output --param 1
+```
