@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker run \
+    --net host \
+    -u $UID:`id -g` \
+    -e DISPLAY=$DISPLAY \
+    -v $HOME/.Xauthority:/root/.Xauthority \
+    -v /:/workdir \
+    -it --rm tak0kada/docker_command_template \
+    main $@
